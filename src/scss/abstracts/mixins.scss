@@ -1,0 +1,12 @@
+@mixin phoneout {
+    @media only screen and (max-width: 600px){
+        display: none;
+        position: absolute;
+    }
+}
+
+@mixin phonein {
+    @media only screen and (max-width: 600px){
+        @content;
+    }
+}

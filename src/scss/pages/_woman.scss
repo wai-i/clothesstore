@@ -1,0 +1,48 @@
+.woman{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+        font-family: monospace;
+    }
+    &_product{
+        @include phonein{
+            width: 90%;
+        }
+        width: 65%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 25rem);
+        justify-content: space-evenly;
+        justify-items: center;
+        &_item{
+            @include phonein{
+                width: inherit;
+            }
+            padding: 30px 10px 10px;
+            &_details{
+                padding: 3%;
+                display: flex;
+                align-items: center;
+                &_title{
+                    width: 80%;
+                }
+                &_price{
+                    font-size: 2rem;
+                }
+            }
+            &_cart{
+                width: 100%;
+                text-align: center;
+                & > *{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+img {
+    width: 100%;
+}

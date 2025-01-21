@@ -1,0 +1,41 @@
+@import "abstracts/mixins.scss";
+
+@import "pages/_home";
+@import "pages/_signup";
+@import "pages/_woman.scss";
+@import "pages/_checkout.scss";
+@import "pages/_order.scss";
+
+@import "components/_header";
+@import "components/_langSwitch";
+@import "components/_backdrop";
+@import "components/_signin";
+@import "components/_modifypwd";
+@import "components/_cart";
+@import "components/_confirm";
+@import "components/_gallery";
+@import "components/_showcase";
+@import "components/totopbutton";
+@import "components/_footer";
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+p,a,input,label,textarea,span,ul,li{
+    font-family: 'Noto Serif HK', serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: #000;   
+}
+ul{
+    padding: 0;
+    margin-bottom: 0;
+}
+li{
+    display: block;
+}

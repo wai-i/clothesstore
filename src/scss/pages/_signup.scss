@@ -1,0 +1,59 @@
+.signup{
+    padding-top: 3%;
+    //height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    & > * {
+        width: 50%;
+        @include phonein{
+            width: 95%;
+        }
+        input {
+            font-family: monospace;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(222, 222, 222);
+            height: 2.5rem;
+            font-weight:bold;
+            font-size: 1.5rem;
+        }
+    }
+    &_title{
+        padding: 0 0 3%;
+    }
+    &_form{
+        & > *{
+            padding: 1.5%;
+        }
+        &_name{
+            display: flex;
+            & > * {
+                width: 50%;
+                &:not(:last-child){
+                    margin-right: 3%;
+                }
+               
+            }
+        }
+        &_email{
+            &_error{
+                color: rgb(220, 0, 0);
+            }
+        }
+        &_submit > button{
+            border: none;
+            border-radius: 10rem;
+            height: 2.5rem;
+            width: 50%;
+            background-color: rgb(200, 200, 200);
+        }
+    }
+    .input-error{
+        background-color: rgb(255, 175, 175);
+        border: 3px solid rgb(255, 0, 0);
+    }
+}

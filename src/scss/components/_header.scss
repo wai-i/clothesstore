@@ -1,0 +1,206 @@
+@keyframes list-popup {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 100;
+    }
+  }
+  @keyframes ac-popup {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 100;
+    }
+  }
+
+.header{
+    background-color: #fff;
+    height: 8rem;
+    width: 100%;
+    padding: 20px 30px 0px;
+    padding-bottom: 0;
+    border-bottom: solid 1px #cfd2cf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    @include phonein{
+        height: 4rem;
+        padding: 0;
+    }
+    &_top{
+        height: 50%;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        @include phonein{
+            height: 100%;
+        }
+    }
+    &_phoneicon{
+        display: none;
+        @include phonein{
+            display:flex; 
+            width: 50%;
+            font-size: 1.5rem;
+            padding-left: 5%;
+            &_img{
+                cursor: pointer;
+            }
+        }
+    }
+    &_logo{
+        display: flex;
+        flex: auto;
+    }
+    &_img{
+        height: 3rem;
+        width: 3rem;
+        @include phonein{
+            transform: translateX(-50%);
+        }
+    }
+    &_tittle{
+        font-size: 2rem;
+        margin-left: 1rem;
+        &:hover {
+            color: #000;
+        }
+        @include phoneout;
+    }
+    &_userinfo{
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        flex: 0 0 25%;
+       
+        &_welcome:hover &_welcome_list{
+            display: flex;
+        }
+        &_welcome{
+            @include phoneout;
+            margin-right: 1px;
+            &_list{
+                display: none;
+                width: 100px;
+                transform: translateX(30%);
+                background-color: #fff;
+                padding: 1rem;
+                position: absolute;
+                flex-direction: column;
+                border-radius: 0.3rem;
+                box-shadow: 5px 5px 15px -3px rgb(0 0 0 / 70%);
+                text-align: center;
+                span{
+                    cursor: pointer;
+                }
+                & > *{
+                    margin-bottom: 10px;
+                }  
+            }
+        }
+        &_login, &_reg, &_cart{
+            @include phoneout;
+            margin: 3%;
+            width: 50px;
+            text-align: center;
+            display : flex;
+            justify-content: center;
+            cursor: pointer;
+            &:hover {
+                color: #000;
+            }
+            &_no{
+                background-color: rgba(255, 255, 255, 1);
+                width: 100%;
+                border-radius: 10px;
+                font-family: cursive;
+                font-size: 0.6rem;
+                font-weight: 900;
+                transform: translate(-5px, -10px);
+                box-shadow: 5px 5px 15px -1px rgb(0 0 0 / 70%);
+            }
+        }
+        &_cart{
+            @include phonein{
+                display: inherit;
+            }
+        }
+    }
+    &_bottom{
+        @include phoneout;
+        height: 50%;
+        display: flex;
+        font-size: 1.2rem;
+        font-weight: 600;
+        & > * {
+            margin-right: 2rem;
+            &:hover {
+                color: #000;
+            }
+        }
+        &_newitem{
+            &:hover &_cat {
+                display: flex; 
+            }
+            &_title{
+                
+            }
+            &_cat{
+                display: none; 
+                width: 300px;
+                transform: translateX(-40%);
+                background-color: #fff;
+                padding: 1rem;
+                position: absolute;
+                flex-direction: column;
+                border-radius: 0.3rem;
+                box-shadow: 5px 5px 15px -3px rgb(0 0 0 / 70%);
+                & > *{
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+    &_phonelist{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-top: 4rem;
+        background-color: rgb(255, 255, 255);
+        animation: list-popup 0.5s;
+        &_ul{
+            align-items: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-size: 2rem;
+            & > * {
+                height: 8%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding-left: 10%;
+            }
+            &_ac{
+                animation: ac-popup 0.5s;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
+
+.dummy{
+    height: 8rem;
+    @include phonein{
+        height: 3.5rem;
+    }
+}
+
+

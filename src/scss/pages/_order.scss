@@ -1,0 +1,83 @@
+.order{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+        font-family: monospace;
+    }
+    &_item{
+        @include phonein{
+            width: 90%;
+        }
+        width: 50%;
+        //display: flex;
+        align-items: center;
+        border: 1px solid rgb(211, 211, 211);
+        border-radius: 10px;
+        margin-bottom: 50px;
+        & > *{
+            padding: 0 10px 0px;
+        }
+        &_header{
+            background-color: rgb(236, 236, 236);
+            border-radius: 10px 10px 0px 0px;
+            height: 50px;
+            display: flex;
+            & > * {
+                margin-top: 5px;
+            }
+            span{
+                font-size: 0.8rem;
+            }
+            &_date{
+                display: flex;
+                flex-direction: column;
+            }
+            &_amount{
+                display: flex;
+                flex-direction: column;
+                flex: auto;
+                margin-left: 10%;
+            }
+            
+        }
+        &_details{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3%;
+            &_product{
+                display: flex;
+                margin-bottom: 15px;
+                width: 100%;
+                &_left{
+                    width: 30%;
+                }
+                &_right{
+                    @include phonein{
+                        font-size: 0.8rem;
+                    }
+                    width: 70%;
+                    margin-left: 10px;
+                    font-size: 1.2rem;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    &_alert{
+        text-align: center;
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin-top: 100px;
+    }
+}
+.smallfont{
+    @include phonein{
+        font-size: 0.8rem;
+    }
+    font-size: 1rem;
+}

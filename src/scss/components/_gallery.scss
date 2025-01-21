@@ -1,0 +1,59 @@
+.gallery {
+
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 5%;
+    &_ul {
+        height: 100%;
+        width: 300%;
+        display: flex;
+        transition: all 0.8s;
+    }
+    &_img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+    [class$="-button"] {
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+    &_left-button {
+        left: 5%;
+    }
+    &_right-button {
+        right: 5%;
+    }
+    &_index{
+        height: 15px;
+        position: absolute;
+        top: 92%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        & > * {
+            &:not(:last-child) {
+              margin-right: 2rem;
+            }
+        }
+        &-dot{
+            border: none;
+            font-size: 0.5rem;
+            border-radius: 1rem;
+            background-color: rgba(white, 0.4);
+            &_active{
+                border: none;
+                font-size: 0.5em;
+                background-color: rgba(white, 1);
+                border-radius: 1rem;
+            }
+        }
+       
+    }
+}

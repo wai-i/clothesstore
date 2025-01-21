@@ -1,0 +1,60 @@
+.signin{
+    width: 30%;
+    height: 300px;
+    background-color: white;
+    position: fixed; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    @include phonein{
+        width: 90%;
+    }
+    &_form{
+        padding-top: 20px;
+        & > *{
+            text-align: center;
+            padding:5px 1.5% 10px;
+        }
+        &_error{
+            background-color: pink;
+            margin: 0% 10% 10px;
+            border-radius: 10px;
+            border: 1px solid red;
+
+        }
+        &_submit{
+            margin-top: 10px;
+        }
+    }
+    &_close{
+        text-align: end;
+        margin-top: 10px;
+        margin-right: 20px;
+        font-size: 1.5rem;
+        & :hover{
+            cursor: pointer;
+        }
+    }
+    input{
+        width: 80%;
+        font-family: monospace;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(222, 222, 222);
+        height: 2.5rem;
+        font-weight:bold;
+        font-size: 1.5rem;
+    }
+    button{
+        border: none;
+        border-radius: 10rem;
+        height: 2.5rem;
+        width: 50%;
+        background-color: rgb(200, 200, 200);
+    }
+    .input-error{
+        background-color: rgb(255, 175, 175);
+        border: 3px solid rgb(255, 0, 0);
+    }
+}
