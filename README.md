@@ -38,7 +38,7 @@
 
 Feel free to reach out if you have any questions or want to discuss this project further:
 
-- 📧 **Email**: [laukaiwaisam@hotmail.com](mailto:laukaiwaisam@hotmail.com)
+- 📧 **Email**: [laukaiwaisam@hotmail.com](mailto:laukaiwai19@Gmail.com)
 - 🔗 **LinkedIn**: [Kai Wai Lau](https://www.linkedin.com/in/kai-wai-lau-973383a8/)
 
 ---
