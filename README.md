@@ -25,7 +25,7 @@
 - **Frontend**:
   - React
   - React Router
-  - CSS for styling
+  - SCSS for styling
 - **Backend**:
   - Firebase Realtime Database for data storage
   - Firebase Authentication for secure login and user management
@@ -39,7 +39,7 @@
 Feel free to reach out if you have any questions or want to discuss this project further:
 
 - 📧 **Email**: [laukaiwai19@gmail.com](mailto:laukaiwai19@gmail.com)
-- 🔗 **LinkedIn**: [Kai Wai Lau](https://www.linkedin.com/in/kai-wai-lau-973383a8/)
+- 🔗 **LinkedIn**: [Ray Lau](https://www.linkedin.com/in/ray-lau-973383a8/)
 
 ---
 
